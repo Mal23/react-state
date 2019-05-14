@@ -15,9 +15,9 @@ export default class ColorPicker extends PureComponent {
 
     return (
       <section className={styles.ColorPicker}>
-        <button className={styles.red} onClick={this.selectColor.bind(null, 'red')}>Red</button>
-        <button className={styles.yellow} onClick={() => this.selectColor('yellow')}>Yellow</button>
-        <button className={styles.blue} onClick={() => this.selectColor('blue')}>Blue</button>
+        <button className={styles.red} onClick={ this.selectColor.bind(null, 'red')}>Red</button>
+        <button className={styles.yellow} onClick={ this.selectColor.bind(null, 'yellow')}>Yellow</button>
+        <button className={styles.blue} onClick={ this.selectColor.bind(null, 'blue')}>Blue</button>
         <div className={styles[color]}></div>
       </section>
     );
